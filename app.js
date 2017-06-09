@@ -3,14 +3,14 @@ var app = require('./config/server');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
-var index = require('./routes/index');
-var noticias = require('./routes/noticias');
-var addnoticia = require('./routes/addnoticia');
-var users = require('./routes/users');
+var index = require('./app/routes/index');
+var noticias = require('./app/routes/noticias');
+var addnoticia = require('./app/routes/addnoticia');
+var users = require('./app/routes/users');
 
 app.use('/', index);
 app.use('/noticias', noticias);
-app.use('/addNoticia', addnoticia);
+app.use('/addnoticia', addnoticia);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
