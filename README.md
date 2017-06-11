@@ -22,6 +22,22 @@ Generating Express:
 
 4 - Start base app: https://github.com/felipemarques8/cursonodejs/tree/developer
 
+
+# ======== Create Database and Table  ===========
+
+1 - Acess mysql CLI: mysql -uroot -p
+
+2 - Views Databases: show databases;
+
+3 - Use Database for create tables: use <name database>
+
+4 - Create table in database:  create table <name table>(
+    id_product int not null primary key auto_increment, 
+    name varchar(100), 
+    description varchar(400), 
+    decimal(6,2) not null,
+    create_date timestamp default current_timestamp)
+
 # ======== Error Mysql MacOsx ===========
 
 Doing these steps under OSX 10.11 El Capitan and MySQL 5.7.X, should do the trick.
